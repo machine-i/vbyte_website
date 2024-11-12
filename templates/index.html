@@ -1,32 +1,45 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="Pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VByte - Soluções em Automação</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>webSite</title>
 </head>
 <body>
-
     <header>
-        <nav>
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#planos">Planos</a></li>
-                <li><a href="#contato">Contato</a></li>
+        <nav class="navigation">
+            <div class="logo-img">
+                <img src="{{ url_for('static', filename='img/logo_preto_e_branco_cortado.svg') }}" alt="vbyte">
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#">Preços</a></li>
+                <li class="nav-item"><a href="#">Sobre</a></li>
+                <li class="nav-item"><a href="#">Contatos</a></li>
+<!--                <i class='bx bx-search'></i>-->
             </ul>
+            <div class="menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </header>
-
-    <section id="sobre">
-        <h1>Bem-vindo à VByte</h1>
-        <p>Somos uma empresa especializada em automação de processos administrativos...</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 VByte - Todos os direitos reservados.</p>
-    </footer>
-
-    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+    <main>
+        <section class="home">
+            <div class="home-text">
+                <h4 class="text-h4">Otimização do trabalho com segurança</h4>
+                <h1 class="text-h1">Automatize as tarefas da sua empresa</h1>
+                <p>Robôs não reclamam do trabalho, não tiram férias e podem funcionar 24h por dia sem mudança na performance.</p>
+                <a href="#" class="home-btn">Encomendar uma automação</a>
+            </div>
+            <div class="home-img">
+                <img src="{{ url_for('static', filename='img/teste2.png') }}" alt="hamburguer">
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
