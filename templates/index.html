@@ -11,13 +11,16 @@
 <body>
     <header>
         <nav class="navigation">
-            <div class="logo-img">
-                <img src="{{ url_for('static', filename='img/logo_preto_e_branco_cortado.svg') }}" alt="vbyte">
-            </div>
+            <a href="#">
+                <div class="logo-img">
+                    <img src="{{ url_for('static', filename='img/logo_preto_e_branco_cortado.svg') }}" alt="vbyte">
+                </div>
+            </a>
             <ul class="nav-menu">
-                <li class="nav-item"><a href="#">Preços</a></li>
-                <li class="nav-item"><a href="#">Sobre</a></li>
-                <li class="nav-item"><a href="#">Contatos</a></li>
+                <li class="nav-item"><a href="#about">Sobre</a></li>
+                <li class="nav-item"><a href="#benefits">Benefícios</a></li>
+                <li class="nav-item"><a href="#plans">Preços</a></li>
+                <li class="nav-item"><a href="#contact">Contatos</a></li>
 <!--                <i class='bx bx-search'></i>-->
             </ul>
             <div class="menu">
@@ -33,13 +36,13 @@
                 <h4 class="text-h4">Otimização do trabalho com segurança</h4>
                 <h1 class="text-h1">Automatize as tarefas da sua empresa</h1>
                 <p>Robôs não reclamam do trabalho, não tiram férias e podem funcionar 24h por dia sem mudança na performance.</p>
-                <a href="#" class="home-btn">Encomendar uma automação</a>
+                <a href="https://wa.me/5522999666144" target="_blank" class="home-btn">Solicitar uma automação</a>
             </div>
             <div class="home-img">
                 <img src="{{ url_for('static', filename='img/home_robot_ok.png') }}" alt="Imagem representando a contratação de um robô">
             </div>
         </section>
-        <section class="about">
+        <section id="about" class="about">
             <h2>Como a Automação de Tarefas Administrativas Funciona</h2>
             <div class="about-content">
                 <div class="about-item">
@@ -56,7 +59,7 @@
                 </div>
             </div>
         </section>
-        <section class="benefits">
+        <section id="benefits" class="benefits">
             <div class="benefits-content">
                 <h2>Benefícios da Automação de Processos Administrativos</h2>
                 <ul class="benefits-list">
@@ -68,11 +71,120 @@
                 </ul>
             </div>
             <div class="benefits-image">
-                <img src="{{ url_for('static', filename='img/benefits.png') }}" alt="Imagem representando os benefícios da automação">
+                <img src="{{ url_for('static', filename='img/ben.jpeg') }}" alt="Imagem representando os benefícios da automação">
             </div>
         </section>
-
+        <section id="plans" class="plans">
+            <h2>Nossos Planos de Automação</h2>
+            <p class="plans-note">*Os valores dependem de uma análise detalhada da tarefa que será automatizada</p>
+            <div class="plans-container">
+                <div class="plan-card">
+                    <h3>Plano Básico</h3>
+                    <p class="plan-price">R$ 500 - R$ 1000 <span class="price-info">/ mês</span></p>
+                    <ul class="plan-features">
+                        <li>Desenvolvimento e assistência contínua de 1 software</li>
+                        <li>Treinamento contínuo</li>
+                        <li>Suporte técnico mensal</li>
+                        <li>Monitoramento de desempenho</li>
+                    </ul>
+                </div>
+                <div class="plan-card">
+                    <h3>Plano Médio</h3>
+                    <p class="plan-price">R$ 1000 - R$ 1500 <span class="price-info">/ mês</span></p>
+                    <ul class="plan-features">
+                        <li>Desenvolvimento e assistência contínua de 2 softwares</li>
+                        <li>Treinamento contínuo</li>
+                        <li>Suporte técnico mensal</li>
+                        <li>Monitoramento de desempenho</li>
+                    </ul>
+                </div>
+                <div class="plan-card">
+                    <h3>Plano Premium</h3>
+                    <p class="plan-price">R$ 1500 - R$ 2200 <span class="price-info">/ mês</span></p>
+                    <ul class="plan-features">
+                        <li>Desenvolvimento e assistência de softwares</li>
+                        <li>Sem limite de softwares (1 por mês)</li>
+                        <li>Treinamento contínuo</li>
+                        <li>Suporte técnico prioritário</li>
+                        <li>Monitoramento de desempenho</li>
+                    </ul>
+                </div>
+                <div class="plan-card">
+                    <h3>Plano Único</h3>
+                    <p class="plan-price">R$ 2500 - R$ 3500</p>
+                    <ul class="plan-features">
+                        <li>Venda de um software por preço único</li>
+                        <li>Treinamento inicial</li>
+                        <li>1 mês de suporte gratuito</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="plans-btn-container">
+                <a href="https://wa.me/5522999666144" target="_blank" class="plan-btn">Solicitar análise</a>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="contact-container">
+                <h2>Entre em Contato</h2>
+                <p>Fale conosco pelas redes sociais ou envie uma mensagem!</p>
+                <div class="contact-items">
+                    <div class="contact-item">
+                        <i class='bx bx-envelope'></i>
+                        <a href="mailto:vbyteofc@gmail.com">vbyteofc@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class='bx bxl-whatsapp'></i>
+                        <a href="https://wa.me/5522999666144" target="_blank">WhatsApp</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class='bx bxl-instagram'></i>
+                        <a href="https://www.instagram.com/vbyte.oficial/" target="_blank">Instagram</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class='bx bxl-linkedin'></i>
+                        <a href="https://www.linkedin.com/company/105437012/admin/dashboard/" target="_blank">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <a href="#">
+                <div class="footer-logo">
+                    <img src="{{ url_for('static', filename='img/logo_V_branco_sem_fundo.png') }}" alt="VByte">
+                </div>
+            </a>
+            <div class="footer-links">
+                <h3>Navegação</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#benefits">Benefícios</a></li>
+                    <li><a href="#plans">Planos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contatos</h3>
+                <p>Email: vbyteofc@gmail.com</p>
+                <p>WhatsApp: +55 (22) 99966-6144</p>
+                <p>WhatsApp: +55 (22) 99966-7115</p>
+            </div>
+
+            <div class="footer-social">
+                <h3>Siga-nos</h3>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/company/105437012/admin/dashboard/"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.instagram.com/vbyte.oficial/"><i class='bx bxl-instagram'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 VByte. Todos os direitos reservados.</p>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
